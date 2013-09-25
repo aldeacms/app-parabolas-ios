@@ -18,26 +18,6 @@ function addScroll () {
   });
 }
 
-function addTooltip(){
-	$(".atooltip").qtip({ 
-		content: {
-			attr: 'data-tooltip',
-			title: 'About me',
-			button: 'Cerrar'
-		},
-    show: {
-        event: 'click'
-    },
-	position: {
-        at: 'top center'
-    },
-	style: { classes: 'qtip-yellow' },
-    hide: {
-        event: false
-    }
-	})
-}
-
 
 function actualizarHeight(){
 	var winHeight = $(window).height();
@@ -73,11 +53,11 @@ function abrirPagina(idPagina, parabola){
 	
 	if(idPagina=="home"){
 		$(".inner").attr("id","divListadoParabolas")
-		$(".inner ul li a").on("click",abrirParabola);		
+		$(".inner ul li a").on("cli
+			ck",abrirParabola);		
 		var options = {	valueNames: ['title']	};
 		listaParabolas = new List('#divListadoParabolas', options);
 	}
-
-	addTooltip();
+	
 	return false;
 }
