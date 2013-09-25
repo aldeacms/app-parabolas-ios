@@ -11,12 +11,13 @@ $(document).ready(function(){
 			dataType:'html',
 			success: function(data) { 
 				$("#content").html(data);
+				$("#content").scrollTop(0);
 				$(this).addClass("active");
 				
 				if(tab=="home"){
 					$("#content").on("ready",function(){
 						$("#content a").on("click",function(){
-							URL = $(this).attr("href");
+							URL = "pages/"+$(this).attr("href");
 							$.ajax({
 								type: 'GET',
 								url: URL,
@@ -24,6 +25,7 @@ $(document).ready(function(){
 								dataType:'html',
 								success: function(data) { 
 									$("#content").html(data);
+									$("#content").scrollTop(0);
 									return false;
 								}
 							});
@@ -31,6 +33,7 @@ $(document).ready(function(){
 					});
 					
 				}
+				$(this).addClass("active");
 				return false;
 			}
 		});
