@@ -36,7 +36,6 @@ html,body{
 	overflow: hidden;
 }
 
-#ocultos{display:none;}
 
 #header{
 	width:100%;
@@ -56,7 +55,6 @@ html,body{
 	line-height:24px;
 	font-family : "Times New Roman", Times, serif;
 	overflow:auto;
-	padding:20px;
 }
 
 h2{
@@ -132,8 +130,6 @@ a:visited{
 	font-size:13px;
 	font-style:italic;
 }
-
-
 
 #toolbar{
 	width:100%;
