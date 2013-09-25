@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	$("#toolbar a").on("click",function(){
 		$("#toolbar a").removeClass("active");
-		page = "file://pages/"+$(this).attr("rel")+".html";
+		tab = $(this).attr("rel");
+		page = "file://pages/"+tab+".html";
 		
 		$.ajax({
 			type: 'GET',
@@ -11,6 +12,23 @@ $(document).ready(function(){
 			success: function(data) { 
 				$("#content").html(data);
 				$(this).addClass("active");
+				
+				if(tab=="home"){
+					$("#content a").on("click",function(){
+						URL = $(this).attr("href");
+						URL = "file://"+URL;
+						$.ajax({
+							type: 'GET',
+							url: URL,
+							async:false,
+							dataType:'html',
+							success: function(data) { 
+								$("#content").html(data);
+							}
+						});
+						return false;
+					});
+				}
 				return false;
 			}
 		});
