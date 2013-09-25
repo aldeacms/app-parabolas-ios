@@ -54,17 +54,17 @@ html,body{
 	font-size:20px;
 	line-height:24px;
 	font-family : "Times New Roman", Times, serif;
-	overflow:auto;
+	overflow-y:auto;
 }
 
-h2{
+#content h2{
 	font-size:26px;
 	line-height:27px;
 	display:block;
 	margin:15px 0;
 	color:#c84c4c;
 }
-h3{
+#content h3{
 	display:block;
 	color:#000;
 	border-bottom:1px solid #777;
@@ -74,7 +74,7 @@ h3{
 	font-weight:bold;
 }
 
-h4{
+#content h4{
 	display:block;
 	color:#000;
 	padding:5px;
@@ -82,31 +82,31 @@ h4{
 	font-size:18px;
 	font-weight:bold;
 }
-p{
+#content p{
 	margin:15px 10px;
 	letter-spacing: 1px;
 }
-div p sup{
+#content div p sup{
 	color:#C84C4C;
 	font-size:80%;
 	bottom:5px;
 	position:relative;
 	margin-left:2px;
 }
-ul{
+#content ul{
 	margin-top:25px;
 	display:block;
 	width:100%;
 	font-weight:normal;
 }
-ul li{
+#content ul li{
 	display:block;
 	border-bottom:1px solid #ECC9C1;
 	background: url(img/ico_next_red.png) center right no-repeat;
 	padding-right:15px;
 }
-ul li a:link,
-ul li a:visited{
+#content ul li a:link,
+#content ul li a:visited{
 	color:#777;
 	text-decoration:none;
 	display: block;
@@ -115,16 +115,16 @@ ul li a:visited{
 	line-height: 24px;
 	letter-spacing: 1px;
 }
-a:link,
-a:visited{
+#content a:link,
+#content a:visited{
 	color:#c84c4c;
 	text-decoration:none;
 }
 
-.explicacion ul{
+#content .explicacion ul{
 	margin-bottom:10px;
 }
-.explicacion ul li{
+#content .explicacion ul li{
 	background: none;
 	padding-right:0;
 	font-size:13px;
