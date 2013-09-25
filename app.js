@@ -17,6 +17,7 @@ $(document).ready(function(){
 				if($("#listadoParabolas").length){
 						$("#listadoParabolas a").on("click",function(){
 							URL = "pages/"+$(this).attr("href");
+							alert(URL);
 							$.ajax({
 								type: 'GET',
 								url: URL,
