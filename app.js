@@ -1,4 +1,6 @@
-$(document).ready(function(){
+document.addEventListener("deviceready", onDeviceReady, false);
+var iabRef = null;
+function onDeviceReady() {
 	$("#toolbar a").on("click",function(){
 		$("#toolbar a").removeClass("active");
 		tab = $(this).attr("rel");
@@ -37,13 +39,18 @@ $(document).ready(function(){
 				
 	});
 	
+	$("a[target=_blank]").on("click",function(){
+		URL = $(this).attr("href");
+		window.open(encodeURI(URL), '_blank', 'location=yes');
+	});
+	
 	 resizeContent();
 	 $(window).on('resize', function(){
 		resizeContent();
 	});
 	
 	$("#tabHome").click();
-});
+}
 
 function resizeContent(){
 	var totalHeight = $(window).height();
