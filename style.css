@@ -43,10 +43,7 @@ html,body{
 	background:#ac4b4b;
 	color:#FFF;
 	text-align:center;
-	height:50px;
-	position: fixed;
-	top:0;
-	z-index:2;
+	height:50px;	
 }
 #titulo h1{
 	font-size:26px;
@@ -54,24 +51,22 @@ html,body{
 }
 
 #content{
-	margin:50px 0 40px 0;
 	width:100%;
 	font-size:20px;
 	line-height:24px;
 	font-family : "Times New Roman", Times, serif;
-	/*overflow-y:auto;
-	-webkit-overflow-scrolling:touch;*/
-	overflow:hidden;
+	overflow:auto;
+	padding:20px;
 }
 
-#content h2{
+h2{
 	font-size:26px;
 	line-height:27px;
 	display:block;
 	margin:15px 0;
 	color:#c84c4c;
 }
-#content h3{
+h3{
 	display:block;
 	color:#000;
 	border-bottom:1px solid #777;
@@ -81,7 +76,7 @@ html,body{
 	font-weight:bold;
 }
 
-#content h4{
+h4{
 	display:block;
 	color:#000;
 	padding:5px;
@@ -89,31 +84,31 @@ html,body{
 	font-size:18px;
 	font-weight:bold;
 }
-#content p{
+p{
 	margin:15px 10px;
 	letter-spacing: 1px;
 }
-#content div p sup{
+div p sup{
 	color:#C84C4C;
 	font-size:80%;
 	bottom:5px;
 	position:relative;
 	margin-left:2px;
 }
-#content ul{
+ul{
 	margin-top:25px;
 	display:block;
 	width:100%;
 	font-weight:normal;
 }
-#content ul li{
+ul li{
 	display:block;
 	border-bottom:1px solid #ECC9C1;
 	background: url(img/ico_next_red.png) center right no-repeat;
 	padding-right:15px;
 }
-#content ul li a:link,
-#content ul li a:visited{
+ul li a:link,
+ul li a:visited{
 	color:#777;
 	text-decoration:none;
 	display: block;
@@ -122,54 +117,29 @@ html,body{
 	line-height: 24px;
 	letter-spacing: 1px;
 }
-#content a:link,
-#content a:visited{
+a:link,
+a:visited{
 	color:#c84c4c;
 	text-decoration:none;
 }
 
-#content .explicacion ul{
+.explicacion ul{
 	margin-bottom:10px;
 }
-#content .explicacion ul li{
+.explicacion ul li{
 	background: none;
 	padding-right:0;
 	font-size:13px;
 	font-style:italic;
 }
 
-#buscador{
-	margin:10px 0;
-	z-index: 99;
-}
 
-.search{
-	display:block;
-	font-size: 20px;
-	color: #666666;
-	-webkit-border-radius: 8px;
-    border-radius: 8px;
-	border:1px solid #cecece;
-	outline:none;
-	padding:4px 4px 4px 35px ;
-	background: url(img/ico_search.png) 10px center no-repeat #fff;
-	width:100%;
-}
-
-.inner{
-	width:96%;
-	margin:10px auto;
-}
 
 #toolbar{
 	width:100%;
 	height:40px;
 	text-align:center;
 	background:url(img/bg_toolbar.png);
-	position:fixed;
-	left:0px;
-	bottom:0px;
-	z-index:2;
 }
 #toolbar ul{
 	display:block;
@@ -195,7 +165,7 @@ html,body{
 	opacity: 0.7;
 }
 
-#content .inner .atooltip{
+.inner .atooltip{
 	color:#777777;
 	border-bottom:1px dotted #AC4B4B;
 	text-decoration:none;
