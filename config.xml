@@ -20,8 +20,7 @@
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 		
 		<gap:platform name="ios" />
-		<preference name="permissions" value="none"/>
-		<preference name="orienation" value="portrait" />
+		<preference name="orientation" value="portrait" />
 		<preference name="fullscreen" value="true" />
 		<preference name="webviewbounce" value="false" />
 		<preference name="stay-in-webview" value="false" />
