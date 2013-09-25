@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$("#toolbar a").on("click",function(){
 		$("#toolbar a").removeClass("active");
 		tab = $(this).attr("rel");
-		page = "file://pages/"+tab+".html";
+		page = "pages/"+tab+".html";
 		
 		$.ajax({
 			type: 'GET',
@@ -16,7 +16,7 @@ $(document).ready(function(){
 				if(tab=="home"){
 					$("#content a").on("click",function(){
 						URL = $(this).attr("href");
-						URL = "file://"+URL;
+						URL = URL;
 						$.ajax({
 							type: 'GET',
 							url: URL,
