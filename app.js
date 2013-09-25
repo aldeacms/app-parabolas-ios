@@ -14,9 +14,8 @@ $(document).ready(function(){
 				$("#content").scrollTop(0);
 				$(this).addClass("active");
 				
-				if(tab=="home"){
-					$("#content").on("ready",function(){
-						$("#content a").on("click",function(){
+				if($("#listadoParabolas").length){
+						$("#listadoParabolas a").on("click",function(){
 							URL = "pages/"+$(this).attr("href");
 							$.ajax({
 								type: 'GET',
@@ -30,7 +29,6 @@ $(document).ready(function(){
 								}
 							});
 						});
-					});
 					
 				}
 				$(this).addClass("active");
