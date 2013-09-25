@@ -14,20 +14,22 @@ $(document).ready(function(){
 				$(this).addClass("active");
 				
 				if(tab=="home"){
-					$("#content a").on("click",function(){
-						URL = $(this).attr("href");
-						URL = URL;
-						$.ajax({
-							type: 'GET',
-							url: URL,
-							async:false,
-							dataType:'html',
-							success: function(data) { 
-								$("#content").html(data);
-							}
+					$("#content").on("ready",function(){
+						$("#content a").on("click",function(){
+							URL = $(this).attr("href");
+							$.ajax({
+								type: 'GET',
+								url: URL,
+								async:false,
+								dataType:'html',
+								success: function(data) { 
+									$("#content").html(data);
+									return false;
+								}
+							});
 						});
-						return false;
 					});
+					
 				}
 				return false;
 			}
