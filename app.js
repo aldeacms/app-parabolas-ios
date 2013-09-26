@@ -33,16 +33,17 @@ function onDeviceReady() {
 						});					
 				}
 				$(this).addClass("active");
+				
+				$("a[target=_blank]").on("click",function(){
+					URL = $(this).attr("href");
+					window.open(encodeURI(URL), '_blank', 'location=yes');
+				});
 				return false;
 			}
 		});
 				
 	});
 	
-	$("a[target=_blank]").on("click",function(){
-		URL = $(this).attr("href");
-		window.open(encodeURI(URL), '_blank', 'location=yes');
-	});
 	
 	 resizeContent();
 	 $(window).on('resize', function(){
