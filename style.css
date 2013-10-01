@@ -170,3 +170,25 @@ html,body{
 	text-decoration:none;
 	cursor:pointer;
 }
+
+
+/* iPhone with no retina display */
+@media screen {
+    body {
+        
+    }
+}
+
+/* iPhone < 5 and retina display */
+@media screen and (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        
+    }
+}
+
+/* iPhone 5 and retina display*/
+@media screen and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        
+    }
+}
