@@ -46,8 +46,9 @@ html,body{
 	height:50px;	
 }
 #titulo h1{
-	font-size:26px;
+	font-size:34px;
 	margin:10px auto;
+	font-weight:medium;
 }
 
 #content{
