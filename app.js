@@ -78,5 +78,5 @@ function onDeviceReady() {
 
 function resizeContent(){
 	var totalHeight = $(window).height();
-	$("#content").css("height",totalHeight-60+"px");
+	$("#content").css("height",totalHeight-50+"px");
 }
