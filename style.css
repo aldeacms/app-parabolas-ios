@@ -44,8 +44,6 @@ html,body{
 	color:#FFF;
 	text-align:center;
 	height:50px;	
-	position:absolute;
-	top:0;
 }
 #header a{
 	color:#FFF;
@@ -75,9 +73,6 @@ html,body{
 	font-weight:medium;
 }
 
-#menu{
-	display:none;
-}
 
 #btnBack{
 	display:none;
