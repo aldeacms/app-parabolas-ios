@@ -44,7 +44,7 @@ html,body{
 	color:#FFF;
 	text-align:center;
 	height:50px;	
-	position:fixed;
+	position:absolute;
 	top:0;
 }
 #header a{
@@ -91,6 +91,7 @@ html,body{
 	font-family : "Times New Roman", Times, serif;
 	overflow-y:auto;
 	-webkit-overflow-scrolling: touch;
+	padding-top:5px;
 }
 
 #content h2{
