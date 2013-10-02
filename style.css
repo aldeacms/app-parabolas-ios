@@ -58,6 +58,7 @@ html,body{
 #header table td a{
 	color:#FFF;
 	text-decoration:none;
+	display:block;
 }
 #header table td.boton{
 	width:55px;
