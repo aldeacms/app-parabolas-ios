@@ -40,9 +40,6 @@ function onDeviceReady() {
 					return false;
 				});
 				
-				if(tab=="about" || tab=="email"){
-					$(".navbar-toggle").click();
-				}
 				return true;
 			}
 		});
