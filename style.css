@@ -58,7 +58,6 @@ html,body{
 	font-family : "Times New Roman", Times, serif;
 	overflow-y:auto;
 	-webkit-overflow-scrolling: touch;
-	margin-top:70px;
 }
 
 #content h2{
