@@ -57,8 +57,9 @@ html,body{
 #boton a,
 #boton2 a{
 	display:block;
-	padding:10px;
-	font-size:24px;
+	padding:15px;
+	font-size:16px;
+	text-decoration:none;
 }
 #boton2{
 	width:10%;
