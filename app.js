@@ -2,7 +2,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 var iabRef = null;
 function onDeviceReady() {
 	$("#toolbar a").on("click",function(){
-		$("#toolbar a").removeClass("active");
+		$("navbar a").removeClass("active");
 		tab = $(this).attr("rel");
 		page = "pages/"+tab+".html";
 		
