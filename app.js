@@ -53,7 +53,7 @@ function onDeviceReady() {
 	});
 	
 	$("#tabHome").click();
-
+}
 function resizeContent(){
 	var totalHeight = $(window).height();
 	$("#content").css("height",totalHeight-70+"px");
