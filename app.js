@@ -1,8 +1,8 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 var iabRef = null;
 function onDeviceReady() {
-	$("#toolbar a").on("click",function(){
-		$("#toolbar a").removeClass("active");
+	$(".navbar a").on("click",function(){
+		$(".navbar a").removeClass("active");
 		tab = $(this).attr("rel");
 		page = "pages/"+tab+".html";
 		
@@ -27,6 +27,7 @@ function onDeviceReady() {
 								success: function(data) { 
 									$("#content").html(data);
 									$("#content").scrollTop(0);
+									$(".brand").html("Par&aacute;bola");
 									return false;
 								}
 							});
@@ -40,7 +41,14 @@ function onDeviceReady() {
 					return false;
 				});
 				
-				return false;
+				if(tab=="about" || tab=="email"){
+					$(".navbar-toggle").click();
+					$(".brand").html($(this).attr("title"));
+				}
+				else{
+					$(".brand").html("Par&aacute;bolas");
+				}
+				return true;
 			}
 		});
 				
@@ -54,8 +62,7 @@ function onDeviceReady() {
 	
 	$("#tabHome").click();
 }
-
 function resizeContent(){
 	var totalHeight = $(window).height();
-	$("#content").css("height",totalHeight-90+"px");
+	$("#content").css("height",totalHeight-70+"px");
 }

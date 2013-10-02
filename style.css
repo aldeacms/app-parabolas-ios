@@ -58,6 +58,7 @@ html,body{
 	font-family : "Times New Roman", Times, serif;
 	overflow-y:auto;
 	-webkit-overflow-scrolling: touch;
+	margin-top:70px;
 }
 
 #content h2{
@@ -169,6 +170,29 @@ html,body{
 	border-bottom:1px dotted #AC4B4B;
 	text-decoration:none;
 	cursor:pointer;
+}
+
+
+.navbar-inverse {
+background-color: #cd3e3e;
+border-color: #cd3e3e;
+color:#FFF;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+color:#FFF;	
+}
+
+.navbar-inverse .navbar-brand {
+color: #FFF;
+}
+
+.navbar .brand {
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  float: none;
+  text-align: center;
 }
 
 
