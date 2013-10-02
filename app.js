@@ -35,6 +35,8 @@ function onDeviceReady() {
 							async:false,
 							dataType:'html',
 							success: function(data) { 
+								$("#btnMenu").hide();
+								$("#btnBack").show();
 								$("#content").html(data);
 								$("#content").scrollTop(0);
 								return false;

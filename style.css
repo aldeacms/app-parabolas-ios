@@ -72,14 +72,10 @@ html,body{
 
 #btnBack{
 	display:none;
-	font-weight:bold;
 }
 
 #menu{
-	font-size:18px;
-}
-#menu i{
-	color:#FFF;
+	font-size:22px;
 }
 
 #content{
