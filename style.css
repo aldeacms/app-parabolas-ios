@@ -172,22 +172,6 @@ html,body{
 }
 
 
-.navbar-inverse {
-background-color: #cd3e3e;
-border-color: #cd3e3e;
-color:#FFF;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-color:#FFF;	
-}
-
-.navbar-inverse .navbar-brand {
-color: #FFF;
-}
-
-
-
 /* iPhone with no retina display */
 @media screen {
     body {

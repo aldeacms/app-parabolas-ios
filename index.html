@@ -4,35 +4,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="phonegap.js"></script>
 		<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#" id="tabHome" rel="home">Par&aacute;bolas</a>
-  </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    
-    <ul class="nav navbar-nav navbar-right">
-    	<li><a href="#" id="tabAbout" rel="about">Informaci&oacute;n</a></li>
-        <li><a href="#" id="tabEmail" rel="email">Contacto</a></li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+		<div id="header" class="cf">
+			<div id="titulo" class="cf">
+				<h1>Par&aacute;bolas</h1>
+			</div>			
+		</div>
 		<div id="content" class="cf"></div>		
-		
+		<div id="toolbar" class="cf">
+			<ul>
+				<li><a href="#" class="active" id="tabHome" rel="home"><img src="img/ico_bible.png" id="btnHome" /></a></li>
+				<li class="separador"><img src="img/separador.png"/></li>
+				<li><a href="#" id="tabAbout" rel="about"><img src="img/ico_info.png" id="btnAbout" /></a></li>
+				<li class="separador"><img src="img/separador.png"/></li>
+				<li><a href="#" id="tabEmail" rel="email"><img src="img/ico_email.png" id="btnEmail" /></a></li>
+			</ul>			
+		</div>
 	</body>
 </html>
