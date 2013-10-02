@@ -44,6 +44,8 @@ html,body{
 	color:#FFF;
 	text-align:center;
 	height:50px;	
+	position:fixed;
+	top:0;
 }
 #header a{
 	color:#FFF;
@@ -73,6 +75,15 @@ html,body{
 	font-weight:medium;
 }
 
+#menu{
+	display:none;
+}
+
+#btnBack{
+	display:none;
+}
+
+
 #content{
 	width:100%;
 	font-size:20px;
@@ -80,9 +91,6 @@ html,body{
 	font-family : "Times New Roman", Times, serif;
 	overflow-y:auto;
 	-webkit-overflow-scrolling: touch;
-}
-#btnBack{
-	display:none;
 }
 
 #content h2{
@@ -157,36 +165,6 @@ html,body{
 	padding-right:0;
 	font-size:13px;
 	font-style:italic;
-}
-
-#toolbar{
-	width:100%;
-	height:40px;
-	text-align:center;
-	background:#444;
-}
-#toolbar ul{
-	display:block;
-	margin:0 auto;
-}
-#toolbar ul li{
-	display: inline-block;
-	width:100px;
-}
-#toolbar ul li.separador{
-	width:1px;
-}
-#toolbar a{
-	display:block;
-}
-#toolbar a img{
-	margin:4px;
-	width:32px;
-	height:32px;
-	opacity: 0.3;
-}
-#toolbar a.active img{
-	opacity: 1;
 }
 
 .inner .atooltip{
