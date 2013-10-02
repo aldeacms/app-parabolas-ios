@@ -1,12 +1,14 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 var iabRef = null;
 function onDeviceReady() {
-	
+
+	$("#menu").hide();
 	$("#menu").mmenu({
 	   configuration: {
 		  pageNodetype: "section"
 	   }
 	});
+	$("#menu").show();
 
 	$("#menu a").on("click",function(){
 		
