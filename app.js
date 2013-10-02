@@ -27,7 +27,6 @@ function onDeviceReady() {
 								success: function(data) { 
 									$("#content").html(data);
 									$("#content").scrollTop(0);
-									$(".brand").html("Par&aacute;bola");
 									return false;
 								}
 							});
@@ -43,10 +42,6 @@ function onDeviceReady() {
 				
 				if(tab=="about" || tab=="email"){
 					$(".navbar-toggle").click();
-					$(".brand").html($(this).attr("title"));
-				}
-				else{
-					$(".brand").html("Par&aacute;bolas");
 				}
 				return true;
 			}
