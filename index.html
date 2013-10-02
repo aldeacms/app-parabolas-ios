@@ -4,25 +4,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="phonegap.js"></script>
 		<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 		<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mmenu.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="header" class="cf">
-			<div id="titulo" class="cf">
-				<h1>Par&aacute;bolas</h1>
-			</div>			
-		</div>
-		<div id="content" class="cf"></div>		
-		<div id="toolbar" class="cf">
-			<ul>
-				<li><a href="#" class="active" id="tabHome" rel="home"><img src="img/ico_bible.png" id="btnHome" /></a></li>
-				<li class="separador"><img src="img/separador.png"/></li>
-				<li><a href="#" id="tabAbout" rel="about"><img src="img/ico_info.png" id="btnAbout" /></a></li>
-				<li class="separador"><img src="img/separador.png"/></li>
-				<li><a href="#" id="tabEmail" rel="email"><img src="img/ico_email.png" id="btnEmail" /></a></li>
-			</ul>			
+		<div id="wrapper">
+			<div id="header" class="cf">
+				<a href="#menu">Open the menu</a>
+				<div id="titulo" class="cf">
+					<h1>Par&aacute;bolas</h1>
+				</div>			
+			</div>
+			<div id="content" class="cf"></div>
+			<nav id="menu" class="cf">
+				<ul>
+					<li><a href="#" class="active" id="tabHome" rel="home">Home</a></li>
+					<li><a href="#" id="tabAbout" rel="about">About</a></li>
+					<li><a href="#" id="tabEmail" rel="email">Email</a></li>
+				</ul>			
+			</nav>
 		</div>
 	</body>
 </html>

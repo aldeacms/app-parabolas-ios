@@ -1,8 +1,15 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 var iabRef = null;
 function onDeviceReady() {
-	$("#toolbar a").on("click",function(){
-		$("#toolbar a").removeClass("active");
+	
+	$("#menu").mmenu({
+	   configuration: {
+		  pageNodetype: "section"
+	   }
+	});
+
+	$("#menu a").on("click",function(){
+		$("#menu a").removeClass("active");
 		tab = $(this).attr("rel");
 		page = "pages/"+tab+".html";
 		
@@ -43,6 +50,8 @@ function onDeviceReady() {
 				return false;
 			}
 		});
+		
+		$("#menu").trigger("close");
 				
 	});
 	
