@@ -40,7 +40,7 @@ function onDeviceReady() {
 					return false;
 				});
 				
-				return false;
+				return true;
 			}
 		});
 				
