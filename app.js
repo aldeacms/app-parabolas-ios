@@ -18,7 +18,7 @@ function onDeviceReady() {
 			success: function(data) { 
 				$("#content").html(data);
 				$("#content").scrollTop(0);
-				$("#header td.title span").html(titulo);
+				$("#header .titulo span").html(titulo);
 				
 				if(tab=='home'){
 					$("#btnBack").hide();
@@ -35,7 +35,7 @@ function onDeviceReady() {
 
 								$("#content").html(data);
 								$("#content").scrollTop(0);
-								$("#header td.title span").html("Par&aacute;bola");
+								$("#header .titulo span").html("Par&aacute;bola");
 								return false;
 							}
 						});
