@@ -159,8 +159,9 @@ html,body{
 }
 
 #about,
-#email{
-	width:90%;
+#email,
+#parabolas{
+	width:95%;
 	margin:0 auto;
 }
 

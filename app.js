@@ -8,6 +8,7 @@ function onDeviceReady() {
 		
 		tab = $(this).attr("rel");
 		page = "pages/"+tab+".html";
+		titulo = $(this).attr("title");
 		
 		$.ajax({
 			type: 'GET',
@@ -17,6 +18,7 @@ function onDeviceReady() {
 			success: function(data) { 
 				$("#content").html(data);
 				$("#content").scrollTop(0);
+				$("#header td.title span").html(titulo);
 				
 				if(tab=='home'){
 					$("#btnBack").hide();
@@ -33,6 +35,7 @@ function onDeviceReady() {
 
 								$("#content").html(data);
 								$("#content").scrollTop(0);
+								$("#header td.title span").html("Par&aacute;bola");
 								return false;
 							}
 						});
