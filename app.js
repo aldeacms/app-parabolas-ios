@@ -42,7 +42,7 @@ function onDeviceReady() {
 					});	
 				}
 				else{
-					$("#btnBack").show();
+					$("#btnBack").hide();
 				}
 				
 				$("a[target=_blank]").on("click",function(){
