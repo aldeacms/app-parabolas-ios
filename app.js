@@ -2,15 +2,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 var iabRef = null;
 function onDeviceReady() {
 
-
-	$("#menu").mmenu({
-	   configuration: {
-		  pageNodetype: "section"
-	   }
-	});
-
-
 	$("#menu a").on("click",function(){
+		$("#menu td").removeClass("active");
+		$(this).parent().addClass("active");
 		
 		tab = $(this).attr("rel");
 		page = "pages/"+tab+".html";
@@ -26,7 +20,7 @@ function onDeviceReady() {
 				
 				if(tab=='home'){
 					$("#btnBack").hide();
-					$("#btnMenu").show();
+
 					$("#listadoParabolas a").on("click",function(){
 						URL = "pages/"+$(this).attr("href");
 						$.ajax({
@@ -35,8 +29,8 @@ function onDeviceReady() {
 							async:false,
 							dataType:'html',
 							success: function(data) { 
-								$("#btnMenu").hide();
 								$("#btnBack").show();
+
 								$("#content").html(data);
 								$("#content").scrollTop(0);
 								return false;
@@ -45,7 +39,6 @@ function onDeviceReady() {
 					});	
 				}
 				else{
-					$("#btnMenu").hide();
 					$("#btnBack").show();
 				}
 				
@@ -78,5 +71,5 @@ function onDeviceReady() {
 
 function resizeContent(){
 	var totalHeight = $(window).height();
-	$("#content").css("height",totalHeight-50+"px");
+	$("#content").css("height",totalHeight-94+"px");
 }

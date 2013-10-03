@@ -4,40 +4,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="phonegap.js"></script>
 		<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
-		<!--<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>-->
-		<link rel="stylesheet" type="text/css" href="css/mmenu.css" />
 		<link rel="stylesheet" type="text/css" href="font-awesome/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="header" class="cf">
-				<table>
-					<tr>
-						<td class="boton">
-							<a href="#menu" id="btnMenu"><i class="icon-reorder"></i>
-							<a href="#" id="btnBack" rel="home"><i class="icon-chevron-left"></i></a></a>
-							</td>
-						<td class="titulo">
-							<span>Par&aacute;bolas</span>
-						</td>
-						<td class="boton">
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div id="content" class="cf"></div>
-			<nav id="menu" class="cf">
-				<ul>
-					<li><a href="#" class="active" id="tabHome" rel="home"><i class="icon-home"></i> Home</a></li>
-					<li><a href="#" id="tabAbout" rel="about"><i class="icon-user"></i> About</a></li>
-					<li><a href="#" id="tabEmail" rel="facebook"><i class="icon-thumbs-up"></i> Facebook</a></li>
-					<li><a href="#" id="tabEmail" rel="donacion"><i class="icon-heart"></i> Donaciones</a></li>
-					<li><a href="#" id="tabEmail" rel="email"><i class="icon-envelope-alt"></i> Contacto</a></li>
-				</ul>			
-			</nav>
+		<div id="header" class="cf">
+			<table>
+				<tr>
+					<td class="boton">
+						<a href="#" id="btnBack" rel="home"><i class="icon-chevron-left"></i></a></a>
+					</td>
+					<td class="titulo">
+						<span>Par&aacute;bolas</span>
+					</td>
+					<td class="boton">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="content" class="cf"></div>
+		<div id="menu" class="cf">
+			<table>
+				<tr>
+					<td><a href="#" class="active" id="tabHome" rel="home"><i class="icon-list"></i><span>Par&aacute;bolas</span></a></td>
+					<td><a href="#" id="tabAbout" rel="about"><i class="icon-user"></i><span>Autor</span></a></td>					
+					<td><a href="#" id="tabEmail" rel="email"><i class="icon-info"></i><span>Cr&eacute;ditos</span></a></td>
+					<td><a href="#" id="tabEmail" rel="donacion"><i class="icon-heart-empty"></i><span>Ay&uacute;danos</span></a></td>
+				</tr>
+			</table>			
 		</div>
 	</body>
 </html>
