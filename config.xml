@@ -2,10 +2,8 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "org.siervofiel.parabolas"
-        versionCode="10" 
+		versionCode="10" 
         version   = "1.0.0">
-
-		<!-- versionCode is optional and Android only -->
 
 		<name>Parabolas de Jesus</name>
 
@@ -20,6 +18,9 @@
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 		
 		<gap:platform name="ios" />
+		<gap:platform name="android" />
+		
+		<preference name="phonegap-version" value="3.0.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="webviewbounce" value="false" />
 		<preference name="stay-in-webview" value="false" />
