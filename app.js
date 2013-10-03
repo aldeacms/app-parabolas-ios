@@ -14,7 +14,8 @@ function onDeviceReady() {
 			
 			random = Math.floor(Math.random() * (39 - 1 + 1) + 1);
 			if(random<10){
-				random = "0"+random+".html";
+				random = random+".html";
+				random = "0"+random;
 			}
 			else{
 				random = random+".html";	
