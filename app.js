@@ -10,6 +10,30 @@ function onDeviceReady() {
 		page = "pages/"+tab+".html";
 		titulo = $(this).attr("title");
 		
+		if (tab=="random"){
+			
+			random = Math.floor(Math.random() * (39 - 1 + 1) + 1);
+			if(random<10){
+				random = "0"+random+".html";
+			}
+			URL = "pages/parabola"+random;
+			$.ajax({
+				type: 'GET',
+				url: URL,
+				async:false,
+				dataType:'html',
+				success: function(data) { 
+					$("#btnBack").show();
+
+					$("#content").html(data);
+					$("#content").scrollTop(0);
+					$("#header .titulo span").html("Par&aacute;bola");
+					return false;
+				}
+			});
+		return false;
+		}
+		
 		$.ajax({
 			type: 'GET',
 			url: page,
