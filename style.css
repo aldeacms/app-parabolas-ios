@@ -77,7 +77,6 @@ html,body{
 	width:100%;
 	font-size:20px;
 	line-height:24px;
-	font-family : "Times New Roman", Times, serif;
 	overflow-y:auto;
 	-webkit-overflow-scrolling: touch;
 }
@@ -167,7 +166,7 @@ html,body{
 
 #menu{
 	height:50px;
-	background:#999;
+	background:#ededed;
 }
 #menu table{
 	margin: 0 auto;
@@ -179,7 +178,7 @@ html,body{
 	width:80px;
 }
 #menu table td a{
-	color:#444;
+	color:#777;
 	text-decoration:none;
 	display:block;
 }
