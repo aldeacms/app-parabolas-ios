@@ -176,12 +176,12 @@ html,body{
 	width:80px;
 }
 #menu table td a{
-	color:#777;
+	color:#000;
 	text-decoration:none;
 	display:block;
 }
 #menu table td.active a{
-	color:#000;
+	color:#cd3e3e;
 }
 #menu table td a i{
 	font-size:20px;
