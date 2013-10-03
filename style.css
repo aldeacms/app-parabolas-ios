@@ -29,8 +29,7 @@ table {	border-collapse: collapse;	border-spacing: 0;}
 
 /* APP Style */
 html,body{
-	background:#fcfcf2;
-	color:#FFF;
+	background:#FFF;
 	font-family: Tahoma, Arial, sans-serif;
 	color:#777;
 	overflow: hidden;
@@ -164,23 +163,24 @@ html,body{
 
 #menu{
 	height:50px;
-	background:#444;
+	background:#FFF;
 }
 #menu table{
-	width:100%;
+	margin: 0 auto;
 }
 #menu table td{
 	text-align:center;
 	vertical-align: middle;
 	padding-top:4px;
+	width:80px;
 }
 #menu table td a{
-	color:#aaa;
+	color:#333;
 	text-decoration:none;
 	display:block;
 }
 #menu table td.active a{
-	color:#FFF;
+	color:#cd3e3e;
 }
 #menu table td a i{
 	font-size:20px;
