@@ -133,8 +133,6 @@ html,body{
 	text-decoration:none;
 	display: block;
 	padding: 15px 9px;
-	font-size: 20px;
-	line-height: 24px;
 	letter-spacing: 1px;
 }
 #content table td i{
@@ -165,7 +163,7 @@ html,body{
 }
 
 #menu{
-	height:50px;
+	height:60px;
 	background:#ededed;
 }
 #menu table{
@@ -188,12 +186,12 @@ html,body{
 #menu table td a i{
 	font-size:20px;
 	display:block;
-	margin-top:2px;
+	margin-top:5px;
 }
 #menu table td a span{
 	display:block;
 	clear:both;
-	font-size:10px;
+	font-size:11px;
 	padding-top:2px;
 	letter-spacing: 1.2;
 }
