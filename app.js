@@ -16,6 +16,9 @@ function onDeviceReady() {
 			if(random<10){
 				random = "0"+random+".html";
 			}
+			else{
+				random = random+".html";	
+			}
 			URL = "pages/parabola"+random;
 			$.ajax({
 				type: 'GET',
