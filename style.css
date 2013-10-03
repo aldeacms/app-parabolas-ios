@@ -31,7 +31,7 @@ table {	border-collapse: collapse;	border-spacing: 0;}
 html,body{
 	background:#FFF;
 	font-family: Tahoma, Arial, sans-serif;
-	color:#777;
+	color:#333;
 	overflow: hidden;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
@@ -163,7 +163,8 @@ html,body{
 
 #menu{
 	height:50px;
-	background:#FFF;
+	background:#fcfcf2;
+	border-top:1px solid #cd3e3e;
 }
 #menu table{
 	margin: 0 auto;
