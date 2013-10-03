@@ -163,7 +163,7 @@ html,body{
 }
 
 #menu{
-	height:44px;
+	height:50px;
 	background:#000;
 }
 #menu table{
@@ -184,6 +184,8 @@ html,body{
 }
 #menu table td a i{
 	font-size:20px;
+	display:block;
+	margin-top:2px;
 }
 #menu table td a span{
 	display:block;
