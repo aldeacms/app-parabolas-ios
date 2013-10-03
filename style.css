@@ -118,26 +118,28 @@ html,body{
 	position:relative;
 	margin-left:2px;
 }
-#content ul{
-	display:block;
-	width:100%;
+#content table{
+	width:95%;
+	margin:0 auto;
 	font-weight:normal;
 }
-#content ul li{
+#content table td{
 	display:block;
-	border-bottom:1px solid #ECC9C1;
-	background: url(img/ico_next_red.png) center right no-repeat;
-	padding-right:15px;
+	border-bottom:1px solid #cd3e3e;
 }
-#content ul li a:link,
-#content ul li a:visited{
-	color:#777;
+#content table td a:link,
+#content table td a:visited{
+	color:#333;
 	text-decoration:none;
 	display: block;
 	padding: 15px 9px;
 	font-size: 20px;
 	line-height: 24px;
 	letter-spacing: 1px;
+}
+#content table td i{
+	color:#cd3e3e;
+	font-size: 22px;
 }
 #content a:link,
 #content a:visited{
@@ -196,12 +198,6 @@ html,body{
 	letter-spacing: 1.2;
 }
 
-.inner .atooltip{
-	color:#777777;
-	border-bottom:1px dotted #AC4B4B;
-	text-decoration:none;
-	cursor:pointer;
-}
 
 
 /* iPhone with no retina display */
