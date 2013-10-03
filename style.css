@@ -40,7 +40,7 @@ html,body{
 
 #header{
 	width:100%;
-	background:#ac4b4b;
+	background:#cd3e3e;
 	color:#FFF;
 	text-align:center;
 	height:50px;	
@@ -164,7 +164,7 @@ html,body{
 
 #menu{
 	height:50px;
-	background:#000;
+	background:#444;
 }
 #menu table{
 	width:100%;
@@ -175,7 +175,7 @@ html,body{
 	padding-top:4px;
 }
 #menu table td a{
-	color:#999;
+	color:#aaa;
 	text-decoration:none;
 	display:block;
 }
