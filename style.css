@@ -167,7 +167,7 @@ html,body{
 
 #menu{
 	height:50px;
-	background:#ddd;
+	background:#999;
 }
 #menu table{
 	margin: 0 auto;
@@ -179,7 +179,7 @@ html,body{
 	width:80px;
 }
 #menu table td a{
-	color:#999;
+	color:#444;
 	text-decoration:none;
 	display:block;
 }
