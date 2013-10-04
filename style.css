@@ -127,6 +127,9 @@ html,body{
 	border-bottom:1px solid #cd3e3e;
 	vertical-align: middle;
 }
+#content table td.active{
+	background:#cd3e3e;
+}
 #content table td a:link,
 #content table td a:visited{
 	color:#333;
@@ -135,9 +138,14 @@ html,body{
 	padding: 15px 9px;
 	letter-spacing: 1px;
 }
+#content table td.active a:link,
+#content table td.active a:visited{
+	color:#FFF;
+}
 #content table td i{
 	color:#cd3e3e;
-	font-size: 22px;
+	font-size: 24px;
+	padding:0 5px;
 }
 #content a:link,
 #content a:visited{
