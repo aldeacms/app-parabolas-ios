@@ -26,7 +26,6 @@ function onDeviceReady() {
 				async:false,
 				dataType:'html',
 				success: function(data) { 
-					$("#btnBack").show();
 
 					$("#content").html(data);
 					$("#content").scrollTop(0);
