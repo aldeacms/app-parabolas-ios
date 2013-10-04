@@ -65,7 +65,7 @@ html,body{
 	font-size:22px;
 }
 #header table td.titulo{
-	font-size:20px;
+	font-size:22px;
 	color:#FFF;
 	transform:scale(1,1.35); /* W3C */
     -webkit-transform:scale(1,1.35); /* Safari and Chrome */
@@ -74,6 +74,7 @@ html,body{
     -o-transform:scale(1,1.35); /* Opera */
     font-weight: lighter;
     letter-spacing: 1.2;
+	font-weight:bold;
 }
 
 #btnBack{
