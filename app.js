@@ -48,6 +48,7 @@ function onDeviceReady() {
 				
 				if(tab=='home'){
 					$("#btnBack").hide();
+					$("#btnSearch").show();
 
 					$("#listadoParabolas a").on("click",function(){
 						$(this).parent().parent().addClass("active");
@@ -60,6 +61,7 @@ function onDeviceReady() {
 							dataType:'html',
 							success: function(data) { 
 								$("#btnBack").show();
+								$("#btnSearch").hide();
 
 								$("#content").html(data);
 								$("#content").scrollTop(0);
@@ -71,6 +73,7 @@ function onDeviceReady() {
 				}
 				else{
 					$("#btnBack").hide();
+					$("#btnSearch").hide();
 				}
 				
 				$("a[target=_blank]").on("click",function(){
