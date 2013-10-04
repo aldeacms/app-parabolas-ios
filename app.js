@@ -10,7 +10,7 @@ function onDeviceReady() {
 		titulo = $(this).attr("title");
 		
 		if (tab=="random"){
-			
+			$("#btnSearch").hide();			
 			random = Math.floor(Math.random() * (39 - 1 + 1) + 1);
 			if(random<10){
 				random = random+".html";
@@ -92,6 +92,17 @@ function onDeviceReady() {
 	
 	$("#btnBack").on("click",function(){
 		$("#tabHome").click();
+	});
+	
+	$("#btnSearch").on("click",function(){
+		if($("#divBusqueda").is("visible")){
+			$("#divBusqueda").hide();
+			$("#busqueda").val("");
+		}
+		else{
+			$("#divBusqueda").show();
+		}		
+		
 	});
 	
 	
