@@ -123,24 +123,24 @@ function resizeContent(){
 }
 
 function busqueda(){
-	var search_string = $(this).val();
-	if (seach_string!=''){
-		$( "#listadoParabolas tr" ).each(function( index ) {
-			parabola = $(this)
-			nombre = $(this).find("span").data("nombre");
-			if(nombre.match("/"+nombre"/i");){
-				$(parabola).show();
-			}
-			else{
-				$(parabola).hide();
-			}
+	// var search_string = $(this).val();
+	// if (seach_string!=''){
+		// $( "#listadoParabolas tr" ).each(function( index ) {
+			// parabola = $(this)
+			// nombre = $(this).find("span").data("nombre");
+			// if(nombre.match("/"+nombre"/i");){
+				// $(parabola).show();
+			// }
+			// else{
+				// $(parabola).hide();
+			// }
 			
-		});
-	}
-	else{
-		$( "#listadoParabolas tr" ).each(function( index ) {
-			$(this).show();
-		});
-	}
+		// });
+	// }
+	// else{
+		// $( "#listadoParabolas tr" ).each(function( index ) {
+			// $(this).show();
+		// });
+	// }
 	
 }
