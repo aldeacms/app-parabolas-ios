@@ -126,14 +126,14 @@ function busqueda(){
 	var search_string = $("#busqueda").val();
 	if (seach_string!=''){
 		$( "#listadoParabolas tr" ).each(function( index ) {
-			$(this).hide();
+			$(this).css("opacity","0.5");
 			nombre = $(this).find(".title").data("nombre");
-			if(nombre.match("/"+seach_string"/i")){
-				$(this).show();
-			}
-			else{
-				$(this).hide();
-			}
+			// if(nombre.match("/"+seach_string"/i")){
+				// $(this).show();
+			// }
+			// else{
+				// $(this).hide();
+			// }
 			
 		});
 	}
