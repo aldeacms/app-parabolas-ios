@@ -67,6 +67,11 @@ html,body{
 #header table td.titulo{
 	font-size:22px;
 	color:#FFF;
+	transform:scale(2,1); /* W3C */
+    -webkit-transform:scale(2,1); /* Safari and Chrome */
+    -moz-transform:scale(2,1); /* Firefox */
+    -ms-transform:scale(2,1); /* IE 9 */
+    -o-transform:scale(2,1); /* Opera */
 }
 
 #btnBack{
