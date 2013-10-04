@@ -84,6 +84,16 @@ html,body{
 #divBusqueda{
 	display:none;
 }
+input[type=search]{
+	color: #333;  
+	cursor: pointer;
+	display: block; 
+	width: 95%; 
+	margin:0 auto;
+	letter-spacing: 4px;        
+	text-shadow: 0 0 1px black;       
+	word-spacing: 20px; 
+}
 
 #content{
 	width:100%;
