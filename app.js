@@ -1,5 +1,4 @@
 document.addEventListener("deviceready", onDeviceReady, false);
-var iabRef = null;
 function onDeviceReady() {
 
 	$("#menu a").on("click",function(){
@@ -52,7 +51,8 @@ function onDeviceReady() {
 					$("#btnBack").hide();
 
 					$("#listadoParabolas a").on("click",function(){
-						$(this).addClass("active");
+						$(this).parent().parent().addClass("active");
+
 						URL = "pages/"+$(this).attr("href");
 						$.ajax({
 							type: 'GET',

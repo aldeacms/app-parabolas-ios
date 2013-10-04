@@ -127,6 +127,7 @@ html,body{
 	border-bottom:1px solid #cd3e3e;
 	vertical-align: middle;
 }
+
 #content table td a:link,
 #content table td a:visited{
 	color:#333;
@@ -135,10 +136,7 @@ html,body{
 	padding: 15px 9px;
 	letter-spacing: 1px;
 }
-#content table td a.active{
-	color:#FFF;
-	background:#cd3e3e;
-}
+
 #content table td.explicacion a:link,
 #content table td.explicacion a:visited{
 	border-bottom: 1px dotted #cd3e3e;
@@ -148,6 +146,7 @@ html,body{
 	font-size: 24px;
 	padding:0 5px;
 }
+
 #content table td i.small{
 	font-size:18px;
 }
@@ -155,6 +154,16 @@ html,body{
 #content a:visited{
 	color:#c84c4c;
 	text-decoration:none;
+}
+#content table tr.active{
+	background:#cd3e3e;
+}
+#content table tr.active i{
+	color:#FFF;
+}
+#content table tr.active a:link,
+#content table tr.active a:visited{
+	color:#FFF;
 }
 
 #content .explicacion ul{
