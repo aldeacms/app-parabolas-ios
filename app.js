@@ -95,7 +95,7 @@ function onDeviceReady() {
 	});
 	
 	$("#btnSearch").on("click",function(){
-		if($("#divBusqueda").is("visible")){
+		if($("#divBusqueda").is(":visible")){
 			$("#divBusqueda").hide();
 			$("#busqueda").val("");
 		}
