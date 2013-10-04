@@ -123,8 +123,8 @@ function resizeContent(){
 }
 
 function busqueda(){
-	// var search_string = $(this).val();
-	// if (seach_string!=''){
+	var search_string = $("#busqueda").val();
+	if (seach_string!=''){
 		// $( "#listadoParabolas tr" ).each(function( index ) {
 			// parabola = $(this)
 			// nombre = $(this).find("span").data("nombre");
@@ -136,11 +136,11 @@ function busqueda(){
 			// }
 			
 		// });
-	// }
-	// else{
+	}
+	else{
 		// $( "#listadoParabolas tr" ).each(function( index ) {
 			// $(this).show();
 		// });
-	// }
+	}
 	
 }

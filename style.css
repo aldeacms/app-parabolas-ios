@@ -92,8 +92,9 @@ input[type=search]{
 	width: 95%; 
 	margin:0 auto;
 	padding:5px;
-	font-size:16px;
+	font-size:20px;
 	font-weight:bold;
+	border:1px solid #cd3e3e;
 }
 
 #content{
