@@ -128,7 +128,7 @@ function busqueda(){
 		$( "#listadoParabolas tr" ).each(function( index ) {
 			$(this).hide();
 			nombre = $(this).find("span").data("nombre");
-			if(nombre.match("/"+nombre"/i")){
+			if(nombre.match("/"+seach_string"/i")){
 				$(this).show();
 			}
 			else{
