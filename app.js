@@ -52,7 +52,7 @@ function onDeviceReady() {
 					$("#btnBack").hide();
 
 					$("#listadoParabolas a").on("click",function(){
-						$(this).parent().addClass("active");
+						$(this).addClass("active");
 						URL = "pages/"+$(this).attr("href");
 						$.ajax({
 							type: 'GET',
