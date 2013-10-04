@@ -144,8 +144,7 @@ html,body{
 }
 #content table td.explicacion a:link,
 #content table td.explicacion a:visited{
-	text-decoration: dotted;
-	color:#cd3e3e;
+	border-bottom: 1px dotted #cd3e3e;
 }
 #content table td i{
 	color:#cd3e3e;
