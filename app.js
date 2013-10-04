@@ -70,6 +70,8 @@ function onDeviceReady() {
 							}
 						});
 					});	
+					
+					$("#busqueda").on("change",busqueda);
 				}
 				else{
 					$("#btnBack").hide();
@@ -103,7 +105,8 @@ function onDeviceReady() {
 			$("#divBusqueda").show();
 		}		
 		
-	});
+	});	
+	
 	
 	
 	 resizeContent();
@@ -117,4 +120,27 @@ function onDeviceReady() {
 function resizeContent(){
 	var totalHeight = $(window).height();
 	$("#content").css("height",totalHeight-110+"px");
+}
+
+function busqueda(){
+	var search_string = $(this).val();
+	if (seach_string!=''){
+		$( "#listadoParabolas tr" ).each(function( index ) {
+			parabola = $(this)
+			nombre = $(this).find("span").data("nombre");
+			if(nombre.str.match("/"+nombre"/i");){
+				$(parabola).show();
+			}
+			else{
+				$(parabola).hide();
+			}
+			
+		});
+	}
+	else{
+		$( "#listadoParabolas tr" ).each(function( index ) {
+			$(this).show();
+		});
+	}
+	
 }

@@ -83,6 +83,7 @@ html,body{
 }
 #divBusqueda{
 	display:none;
+	padding:10px 0;
 }
 input[type=search]{
 	color: #333;  
@@ -90,9 +91,9 @@ input[type=search]{
 	display: block; 
 	width: 95%; 
 	margin:0 auto;
-	letter-spacing: 4px;        
-	text-shadow: 0 0 1px black;       
-	word-spacing: 20px; 
+	padding:5px;
+	font-size:16px;
+	font-weight:bold;
 }
 
 #content{
