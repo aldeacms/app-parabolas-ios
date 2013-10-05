@@ -1,4 +1,5 @@
-$(document).ready(function(){
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
 
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
@@ -136,7 +137,7 @@ $(document).ready(function(){
 	});
 	
 	$("#tabHome").click();
-});
+}
 
 function resizeContent(){
 	var totalHeight = $(window).height();
