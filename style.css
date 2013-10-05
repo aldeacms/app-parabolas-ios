@@ -89,8 +89,8 @@ em{
 #divBusqueda i{
 	color:#999;
 	position:relative;
-	top:-15px;
-	right:15px;
+	bottom:15px;
+	right:10px;
 	font-size:25px;
 }
 #busqueda{
