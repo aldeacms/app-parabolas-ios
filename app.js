@@ -88,7 +88,7 @@ function onDeviceReady() {
 						});
 						
 					});
-					$("#divBusqueda i").on("click",function(){
+					$("#btnClose").on("click",function(){
 						$("#busqueda").val("");
 						$("#busqueda").keyup();
 						return false;
