@@ -1,5 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
+	$("#divBusqueda").hide();
 
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
