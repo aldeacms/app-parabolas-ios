@@ -75,11 +75,9 @@ function onDeviceReady() {
 						var search_string = $("#busqueda").val();
 						
 						search_string = search_string.toLowerCase();
-						alert(search_string);
 
 						$( ".parabola" ).each(function( index ) {
 							nombre = $(this).data("nombre");
-							alert(nombre);
 							if(nombre.search(search_string) !=-1){
 								$(this).parent().parent().parent().show();
 							}
