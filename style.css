@@ -85,11 +85,11 @@ html,body{
 	padding:10px 0;
 }
 #divBusqueda i{
-	color:#666666;
+	color:#999;
 	position:absolute;
 	top:70px;
 	right:15px;
-	font-size:45px;
+	font-size:25px;
 }
 #busqueda{
 	color: #333;  
