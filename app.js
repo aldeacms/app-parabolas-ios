@@ -101,7 +101,7 @@ function onDeviceReady() {
 				
 				$("a[target=_blank]").on("click",function(){
 					URL = $(this).attr("href");
-					window.open(encodeURI(URL), '_system');
+					window.open(encodeURI(URL), '_blank');
 					return false;
 				});
 				
