@@ -123,24 +123,3 @@ function resizeContent(){
 	var totalHeight = $(window).height();
 	$("#content").css("height",totalHeight-110+"px");
 }
-
-function busqueda(){
-	var search_string = $("#busqueda").val();
-	if (seach_string!=0){
-		search_string = search_string.toLowerCase();
-		alert(search_string);
-
-		$( ".parabola" ).each(function( index ) {
-			nombre = $(this).data("nombre");
-			alert(nombre);
-			if(nombre.search(search_string) !=-1){
-				$(this).parent().parent().parent().show();
-			}
-			else{
-				$(this).parent().parent().parent().hide();
-			}
-			
-		});
-	}
-	
-}
