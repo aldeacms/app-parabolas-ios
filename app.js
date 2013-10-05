@@ -71,9 +71,8 @@ function onDeviceReady() {
 						});
 					});	
 					
-					
-					$(document).on('change','#busqueda',function(){ 
-					    busqueda();
+					$("#busqueda").on("change",function(){
+						busqueda();
 					});
 				}
 				else{
@@ -133,7 +132,8 @@ function busqueda(){
 
 		$( ".parabola" ).each(function( index ) {
 			nombre = $(this).data("nombre");
-			if(nombre.indexOf(search_string) !=-1){
+			alert(nombre);
+			if(nombre.search(search_string) !=-1){
 				$(this).parent().parent().parent().show();
 			}
 			else{
