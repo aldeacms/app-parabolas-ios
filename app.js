@@ -88,6 +88,11 @@ function onDeviceReady() {
 						});
 						
 					});
+					$("#divBusqueda i").on("click",function(){
+						$("#busqueda").val("");
+						$("#busqueda").keyup();
+						return false;
+					});
 				}
 				else{
 					$("#btnBack").hide();
