@@ -126,7 +126,7 @@ function resizeContent(){
 
 function busqueda(){
 	var search_string = $("#busqueda").val();
-	if (seach_string.length>0){
+	if (seach_string!=0){
 		search_string = search_string.toLowerCase();
 		alert(search_string);
 
