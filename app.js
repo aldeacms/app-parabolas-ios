@@ -1,6 +1,5 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-	$("#divBusqueda").hide();
 
 	$("#menu a").on("click",function(){
 		$("#menu td").removeClass("active");
@@ -116,6 +115,7 @@ function onDeviceReady() {
 	
 	$("#btnBack").on("click",function(){
 		$("#tabHome").click();
+		$("#divBusqueda").hide();
 	});
 	
 	$("#btnSearch").on("click",function(){
