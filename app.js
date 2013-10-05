@@ -116,6 +116,7 @@ function onDeviceReady() {
 		if($("#divBusqueda").is(":visible")){
 			$("#divBusqueda").hide();
 			$("#busqueda").val("");
+			$("#busqueda").keyup();
 		}
 		else{
 			$("#divBusqueda").show();
