@@ -35,6 +35,9 @@ html,body{
 	overflow: hidden;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+em{
+	font-style: italic;
+}
 
 
 #header{
