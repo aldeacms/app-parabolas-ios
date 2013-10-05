@@ -84,6 +84,12 @@ html,body{
 	display:none;
 	padding:10px 0;
 }
+#divBusqueda i{
+	color:#ada8a8;
+	position:relative;
+	top:5px;
+	right:10px;
+}
 #busqueda{
 	color: #333;  
 	cursor: pointer;
