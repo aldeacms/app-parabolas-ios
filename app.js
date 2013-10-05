@@ -71,8 +71,24 @@ function onDeviceReady() {
 						});
 					});	
 					
-					$("#busqueda").on("change",function(){
-						busqueda();
+					$("#busqueda").on("keyup",function(){
+						var search_string = $("#busqueda").val();
+						if (seach_string!=""){
+							search_string = search_string.toLowerCase();
+							alert(search_string);
+
+							$( ".parabola" ).each(function( index ) {
+								nombre = $(this).data("nombre");
+								alert(nombre);
+								if(nombre.search(search_string) !=-1){
+									$(this).parent().parent().parent().show();
+								}
+								else{
+									$(this).parent().parent().parent().hide();
+								}
+								
+							});
+						}
 					});
 				}
 				else{
