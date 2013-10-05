@@ -86,9 +86,10 @@ html,body{
 }
 #divBusqueda i{
 	color:#ada8a8;
-	position:relative;
-	top:5px;
+	position:absolute;
+	top:70px;
 	right:10px;
+	font-size:22px;
 }
 #busqueda{
 	color: #333;  
