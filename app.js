@@ -115,7 +115,6 @@ function onDeviceReady() {
 	
 	$("#btnBack").on("click",function(){
 		$("#tabHome").click();
-		$("#divBusqueda").hide();
 	});
 	
 	$("#btnSearch").on("click",function(){

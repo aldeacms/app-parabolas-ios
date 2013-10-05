@@ -84,13 +84,14 @@ em{
 	display:none;
 }
 #divBusqueda{
+	display:none;
 	padding:10px 0;
 }
 #divBusqueda i{
 	color:#999;
 	position:relative;
-	bottom:15px;
-	right:10px;
+	top:-15px;
+	right:15px;
 	font-size:25px;
 }
 #busqueda{
