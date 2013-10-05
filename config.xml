@@ -14,8 +14,6 @@
 			Ministerio Siervo Fiel
 		</author>
 		
-		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
-		
 		<gap:platform name="ios" />
 		
 		<preference name="phonegap-version" value="3.0.0" />
