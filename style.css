@@ -88,11 +88,11 @@ em{
 	padding:10px 0;
 }
 #btnClose{
-	color:#999;
-	position:relative;
-	top:-15px;
-	right:15px;
-	font-size:25px;
+	color: #999;
+	position: relative;
+	bottom: 40px;
+	left: 95%;
+	font-size: 25px;
 }
 #busqueda{
 	color: #333;  
