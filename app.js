@@ -71,7 +71,10 @@ function onDeviceReady() {
 						});
 					});	
 					
-					$("#busqueda").on("change",busqueda);
+					
+					$(document).on('change','#busqueda',function(){ 
+					    busqueda();
+					});
 				}
 				else{
 					$("#btnBack").hide();
@@ -124,9 +127,9 @@ function resizeContent(){
 
 function busqueda(){
 	var search_string = $("#busqueda").val();
-	alert(search_string);
 	if (seach_string.length>0){
 		search_string = search_string.toLowerCase();
+		alert(search_string);
 
 		$( ".parabola" ).each(function( index ) {
 			nombre = $(this).data("nombre");
